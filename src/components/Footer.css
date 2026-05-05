@@ -1,0 +1,29 @@
+.footer {
+  margin-top: 4rem;
+  padding: 2rem 0;
+  border-radius: 0;
+  border-left: none;
+  border-right: none;
+  border-bottom: none;
+  background: rgba(3, 0, 20, 0.7);
+}
+
+.footer-container {
+  text-align: center;
+}
+
+.social-icon {
+  font-size: 1.5rem;
+  color: var(--text-muted);
+  transition: all 0.3s ease;
+}
+
+.social-icon:hover {
+  color: var(--accent-cyan);
+  filter: drop-shadow(0 0 10px var(--accent-cyan-glow));
+  transform: translateY(-3px);
+}
+
+.footer-text {
+  margin-top: 1rem;
+}

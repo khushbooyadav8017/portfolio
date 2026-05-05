@@ -1,0 +1,57 @@
+.about-text {
+  border-radius: 16px;
+}
+
+.text-xl {
+  font-size: 1.5rem;
+}
+
+.font-bold {
+  font-weight: 700;
+}
+
+.font-mono {
+  font-family: var(--font-mono);
+}
+
+.text-accent-cyan {
+  color: var(--accent-cyan);
+}
+
+.text-muted {
+  color: var(--text-muted);
+}
+
+.tech-tag {
+  padding: 0.3rem 0.8rem;
+  font-size: 0.8rem;
+  font-family: var(--font-mono);
+  color: var(--accent-cyan);
+  border-radius: 4px;
+}
+
+.tech-tag:hover {
+  background: var(--accent-cyan);
+  color: #000;
+  box-shadow: 0 0 10px var(--accent-cyan-glow);
+}
+
+.progress-bar-bg {
+  width: 100%;
+  height: 8px;
+  background: var(--glass-bg);
+  border: 1px solid var(--glass-border);
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.progress-bar-fill {
+  height: 100%;
+  background: linear-gradient(90deg, var(--accent-cyan), var(--accent-purple));
+  box-shadow: 0 0 10px var(--accent-purple-glow);
+  border-radius: 4px;
+}
+
+.p-3 {
+  padding: 2rem;
+}

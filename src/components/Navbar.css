@@ -1,0 +1,70 @@
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: var(--nav-height);
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+}
+
+.nav-container {
+  width: 100%;
+}
+
+.brand {
+  font-weight: 700;
+  font-size: 1.2rem;
+  font-family: var(--font-mono);
+}
+
+.logo-box {
+  width: 40px;
+  height: 40px;
+  background: rgba(0, 240, 255, 0.1);
+  border: 1px solid var(--accent-cyan);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+  color: var(--accent-cyan);
+  font-weight: bold;
+}
+
+.brand-name {
+  color: var(--text-main);
+  text-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+}
+
+.nav-links {
+  margin: 0;
+  padding: 0;
+}
+
+.nav-link {
+  font-family: var(--font-mono);
+  font-size: 0.9rem;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  position: relative;
+}
+
+.nav-link:hover, .nav-link.active {
+  color: var(--accent-cyan);
+}
+
+.nav-link.active::after {
+  content: '';
+  position: absolute;
+  bottom: -4px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 20px;
+  height: 2px;
+  background: var(--accent-cyan);
+  box-shadow: 0 0 10px var(--accent-cyan-glow);
+}
