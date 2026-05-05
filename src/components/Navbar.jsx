@@ -11,7 +11,6 @@ const Navbar = () => {
     <nav className="navbar glass-nav">
       <div className="container nav-container flex justify-between items-center">
         <Link to="/" className="brand flex items-center gap-1">
-          <div className="logo-box">KY</div>
           <span className="brand-name">Khushboo Yadav</span>
         </Link>
         
