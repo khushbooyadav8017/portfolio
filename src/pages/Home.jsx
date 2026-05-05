@@ -8,7 +8,7 @@ const Home = () => {
   return (
     <div className="home-container">
       {/* Hero Section */}
-      <section className="hero-section container flex flex-col justify-center items-start">
+      <section className="hero-section container flex flex-col justify-start items-start" style={{ paddingTop: '80px' }}>
         <motion.div
           className="status-badge glass-panel flex items-center gap-1 mb-2"
           initial={{ opacity: 0, y: -20 }}
@@ -20,12 +20,13 @@ const Home = () => {
         </motion.div>
 
         <motion.h1
-          className="hero-title"
+          className="hero-title flex flex-wrap items-center gap-3"
           initial={{ opacity: 0, x: -30 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.7, delay: 0.2 }}
         >
-          Hi, I’m <span className="gradient-text">Khushboo Yadav</span> 👩‍💻
+          <span>Hi, I’m <span className="gradient-text">Khushboo Yadav</span></span>
+          <span style={{ fontSize: '0.85em', display: 'inline-block' }}>👩‍💻</span>
         </motion.h1>
 
         <motion.h2
@@ -45,7 +46,7 @@ const Home = () => {
         >
           I build scalable, responsive, and user-friendly web applications using modern technologies.
         </motion.p>
-        
+
         <motion.p
           className="hero-description mb-3"
           initial={{ opacity: 0 }}
